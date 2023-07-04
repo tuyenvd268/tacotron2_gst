@@ -195,7 +195,8 @@ def train(config):
                 save_checkpoint(model, optimizer, learning_rate, step, state_dict_path)
                 
             if is_main_process() and step % int(config["logging_per_steps"]) == 0:
-                val_mel_loss, val_gate_loss, val_emotion_loss = validate(model, criterion, val_loader, step)
+                with torch.cuda.amp.autocast(dtype=torch.float16):
+                    val_mel_loss, val_gate_loss, val_emotion_loss = validate(model, criterion, val_loader, step)
                 train_mel_loss, train_gate_loss, train_emotion_loss = \
                     statistics.mean(train_mel_losses), statistics.mean(train_gate_losses), statistics.mean(train_emotion_losses)
                     
