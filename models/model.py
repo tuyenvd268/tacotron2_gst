@@ -74,7 +74,7 @@ class Tacotron2(nn.Module):
         emotion_predictions = attention_weight
         
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
-        
+        print(encoder_outputs, embedded_emotions)
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         
