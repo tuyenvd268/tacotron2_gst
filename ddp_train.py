@@ -80,13 +80,14 @@ def prepare_dataloaders(config):
         trainset, 
         shuffle=False,sampler=train_sampler,
         batch_size=config["batch_size"], pin_memory=False,
-        num_workers=1,
+        num_workers=0,
         drop_last=True, collate_fn=collate_fn
     )
     
     valid_loader = DataLoader(
         valset, 
         shuffle=False,sampler=val_sampler,
+        num_workers=0,
         batch_size=config["batch_size"], pin_memory=False,
         drop_last=False, collate_fn=collate_fn
     )
