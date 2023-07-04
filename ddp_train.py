@@ -153,7 +153,7 @@ def train(config):
     model = init_model(config=config)
     
     model = model.cuda()
-    model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank], find_unused_parameters=True)
+    model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
 
     criterion = Tacotron2Loss()    
     optimizer = torch.optim.Adam(model.parameters(), lr=float(config["learning_rate"]), weight_decay=float(config["weight_decay"]))
