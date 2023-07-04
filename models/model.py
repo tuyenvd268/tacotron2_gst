@@ -48,12 +48,13 @@ class Tacotron2(nn.Module):
         text_lengths, output_lengths = text_lengths.data, output_lengths.data
         embedded_inputs = self.embedding(text_inputs).transpose(1, 2)
         encoder_outputs = self.encoder(embedded_inputs, text_lengths)        
-        emotion_embeddings = self.reference_encoder(mels.transpose(1, 2))
-        attention_weight = torch.matmul(emotion_embeddings, self.emotion_embeddings.T)      
-        attention_weight = torch.nn.functional.softmax(attention_weight, dim=1)
         
-        embedded_emotions = torch.matmul(attention_weight, self.emotion_embeddings).unsqueeze(1)
+        emotion_embeddings = self.reference_encoder(mels.transpose(1, 2))
+        attention_weight = torch.matmul(emotion_embeddings, self.emotion_embeddings.T)
         emotion_predictions = attention_weight
+
+        embedded_emotions = torch.matmul(
+            torch.nn.functional.softmax(attention_weight, dim=1), self.emotion_embeddings).unsqueeze(1).detach().clone()
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
         
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
