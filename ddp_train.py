@@ -169,7 +169,7 @@ def train(config):
         train_mel_losses, train_gate_losses, train_emotion_losses = [], [], []
         for batch in train_tqdm:
             optimizer.zero_grad()
-            x, y = model.parse_batch(batch)
+            x, y = parse_batch(batch)
             
             with torch.cuda.amp.autocast(dtype=torch.float16):
                 y_pred = model(x)
