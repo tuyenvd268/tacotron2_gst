@@ -107,8 +107,8 @@ class Reference_Encoder(nn.Module):
         super(Reference_Encoder, self).__init__()
         
         self.conv_net = Conv_Net(
-            channels=[80, 64, 128, 256, 512, 256, 128], 
-            conv_kernels=[3, 3, 3, 3, 3, 3], conv_strides=[2, 1, 2, 1, 2, 2], 
+            channels=[80, 128, 128, 256, 256, 128], 
+            conv_kernels=[3, 3, 3, 3, 3], conv_strides=[2, 1, 2, 1, 2], 
             dropout=0.2
         )
         self.dropout = nn.Dropout(0.2)
