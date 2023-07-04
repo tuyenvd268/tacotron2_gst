@@ -37,7 +37,7 @@ def parse_batch(batch):
     emotion_label, text_padded, input_lengths, mel_padded, gate_padded, \
         output_lengths = batch
     text_padded = to_gpu(text_padded).long()
-    emotion_label = to_gpu(emotion_label).long()
+    emotion_label = to_gpu(emotion_label).float()
     input_lengths = to_gpu(input_lengths).long()
     max_len = torch.max(input_lengths.data).item()
     mel_padded = to_gpu(mel_padded).float()

@@ -49,12 +49,18 @@ class TextMelDataset(Dataset):
 
         return melspec
     
+    def smooth_labels(self, labels, factor=0.1):
+        labels *= (1 - factor)
+        labels += (factor / labels.shape[0])
+        return labels.astype(np.float32)
+    
     def get_mel_text_pair(self, metadata):
         wav_id, phoneme, text, emotion = metadata[0], metadata[1], metadata[2], metadata[3]
         
         text = self.get_text(phoneme)
         mel = self.get_mel(wav_id)
-        emotion_label = self.emotion2id[emotion]
+        emotion_label = torch.nn.functional.one_hot(torch.tensor(self.emotion2id[emotion]), num_classes=4).float()
+        emotion_label = self.smooth_labels(emotion_label.numpy())
         
         return (text, mel, emotion_label)
     def __getitem__(self, index):
@@ -86,9 +92,9 @@ class TextMelCollate():
         for i in range(len(ids_sorted_decreasing)):
             text = batch[ids_sorted_decreasing[i]][0]
             text_padded[i, :text.size(0)] = text
-            emotion_label.append(batch[ids_sorted_decreasing[i]][2])
-            
-        emotion_label = torch.Tensor(emotion_label)
+            emotion_label.append(torch.Tensor(batch[ids_sorted_decreasing[i]][2]))
+        
+        emotion_label = torch.vstack(emotion_label)
 
         # Right zero-pad mel-spec
         num_mels = batch[0][1].size(0)

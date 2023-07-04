@@ -3,7 +3,7 @@ from torch import nn
 class Tacotron2Loss(nn.Module):
     def __init__(self):
         super(Tacotron2Loss, self).__init__()
-        self.cre_loss = nn.CrossEntropyLoss(label_smoothing=0.1)
+        self.cre_loss = nn.CrossEntropyLoss()
 
     def forward(self, model_output, targets):
         emotion_targets, mel_target, gate_target = targets[0], targets[1], targets[2]
