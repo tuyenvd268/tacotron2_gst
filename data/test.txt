@@ -1,0 +1,205 @@
+004421|{nh ow3 dd uw2 ngz k o3 t i3 nhz t ie2 nc l oo6 nc dd o3 nh a1 .}|nhớ đừng có tính tiền lộn đó nha|neutral
+000809|{k uw3 t ie2 nc x e1 oo1 mc x e1 b w iz3 tc .}|cứ tiền xe ôm xe buýt|neutral
+009139|{m a2 b aa1 iz1 d ow2 n a1 mc dd aa1 uz1 k o3 m oo6 tc dd oo2 ngz x u1 d i3 nhz t u3 iz3 .}|mà bây giờ nam đâu có một đồng xu dính túi|neutral
+001706|{ch o1 n ee1 nc a1 nhz aa3 iz3 ch wa1 m uo3 nc x w aa3 tc h ie6 nc .}|cho nên anh ấy chưa muốn xuất hiện|sad
+000773|{dd ee4 a1 nhz kh o4 iz4 ch u6 pc h i2 nhz n wa5 .}|để anh khỏi chụp hình nữa|angry
+000714|{a1 nhz n o3 iz3 v aa6 iz6 l a2 x a1 oz1 .}|anh nói vậy là sao|neutral
+004340|{t oo1 iz1 th i3 chz dd oo4 iz4 a3 .}|tôi thích đổi á|happy
+001975|{uw2 t oo1 iz1 k u5 ngz v aa6 iz6 a3 .}|ừ tôi cũng vậy á|happy
+003643|{dd i1 r a1 k o1 iz1 .}|đi ra coi|angry
+007900|{a1 nhz k o3 ng i5 l a2 kh u3 kc ng w aw6 tc ng w iz1 h ie4 mc k uo4 k uo6 kc dd ow2 iz2 a1 nhz .}|anh có nghĩ là khúc ngoặt nguy hiểm của cuộc đời anh|neutral
+002914|{ng i5 b a3 nc l uo1 nc h a4 .}|nghĩ bán luôn hả|neutral
+001883|{x a1 oz1 dd wa6 kc t u1 iz1 ph a4 iz4 l o1 x o1 ngz dd oo3 ngz x a3 chz n aw2 iz2 m ow3 iz3 dd i1 dd wa6 kc .}|sao được tui phải lo xong đống sách này mới đi được|neutral
+008274|{h oo2 iz2 x wa1 k o1 nc d ie6 pc l a2 b oo2 k u5 k uo4 a1 nhz dd o3 h a4 .}|hồi xưa con Diệp là bồ cũ của anh đó hả|neutral
+009050|{h oo2 iz2 nh o4 h a4 h oo2 iz2 nh o4 th i2 k u5 ngz nh uw1 b a1 oz1 b a6 nc tr e4 kh a3 kc dd o3 .}|hồi nhỏ hả hồi nhỏ thì cũng như bao bạn trẻ khác đó|neutral
+006468|{a1 nhz m a2 n o3 iz3 ch w ie6 nc n aw2 iz2 l aa2 nc n wa5 t oo1 iz1 dd a3 nhz a1 nhz ng aw1 iz1 t a6 iz6 dd aa1 iz1 l uo1 nc a3 nh a1 .}|anh mà nói chuyện này lần nữa tôi đánh anh ngay tại đây luôn á nha|angry
+000742|{dd o3 ngz k oo1 ngz ch uo3 h w a2 ngz t uw4 v ow3 iz3 l a6 iz6 ch ow1 iz1 nh uw5 ngz k a3 iz3 tr o2 nh uw1 l a2 th aa3 iz3 g aw6 pc .}|đóng công chúa hoàng tử với lại chơi những cái trò như là thấy gặp|neutral
+004507|{n ee3 uz3 kh oo1 ngz ng wa2 iz2 t a1 dd i1 d o6 nc h ee3 tc x a3 chz a3 .}|nếu không người ta đi dọn hết sách á|neutral
+009122|{dd i1 h wa3 ngz n aw2 iz2 n e2 .}|đi hướng này nè|angry
+001058|{a1 nhz kh oo1 ngz nh ow3 l a2 ch w ie6 nc k uo4 a1 nhz .}|anh không nhớ là chuyện của anh|neutral
+000373|{dd aw2 ngz n a2 oz2 th i2 b a1 m e6 n a1 mc k u5 ngz b ie3 tc b i3 m aa6 tc n aw2 iz2 r oo2 iz2 .}|đằng nào thì ba mẹ nam cũng biết bí mật này rồi|neutral
+004254|{t uw3 kc k w a3 .}|tức quá|angry
+003737|{t a6 iz6 x a1 oz1 dd ee3 nc b aa1 iz1 d ow2 a1 nhz m ow3 iz3 k w aw1 iz1 l a6 iz6 t i2 mc e1 mc .}|tại sao đến bây giờ anh mới quay lại tìm em|sad
+008294|{dd u3 ngz l a2 k o3 k e4 aw1 nc h oo1 ngz h ee3 tc .}|đúng là có kẻ ăn hông hết|neutral
+002597|{m aa3 tc t ie1 uz1 ph a4 iz4 t i2 mc dd i1 .}|mất tiêu phải tìm đi|sad
+005100|{k i1 nhz t ow4 mc .}|kinh tởm|angry
+008154|{a1 nhz ph a4 iz4 ch aw6 iz6 dd wa6 kc x e1 dd a6 pc .}|anh phải chạy được xe đạp|neutral
+004653|{ng wa2 iz2 ie1 uz1 t oo1 iz1 dd e6 pc tr a1 iz1 h ow1 nc a1 nhz nh ie2 uz2 .}|người yêu tôi đẹp trai hơn anh nhiều|happy
+000470|{t oo1 iz1 ch wa1 b a1 oz1 d ow2 ng e1 a4 nhz n o3 iz3 l a2 a1 nhz k o3 b a2 k o1 nc ow4 d wa3 iz3 k w ee1 h ee3 tc tr ow1 nc .}|tôi chưa bao giờ nghe ảnh nói là anh có bà con ở dưới quê hết trơn|neutral
+005984|{k o2 nc dd oo3 iz3 v ow3 iz3 nh aa1 nc v aa6 tc tr u3 kc .}|còn đối với nhân vật trúc|neutral
+006589|{dd o6 kc th a2 nhz t ie3 ngz kh oo1 ngz dd wa6 kc v aa6 iz6 t a1 .}|đọc thành tiếng không được vậy ta|neutral
+005114|{kh oo1 ngz ph a4 iz4 k o3 nh ie2 uz2 dd ie2 uz2 dd ee4 l o1 .}|không phải có nhiều điều để lo|neutral
+009234|{t u6 iz6 n o3 l a2 b a6 nc k uo4 k o1 nc tr a1 iz1 h a1 iz1 b a3 kc a3 .}|tụi nó là bạn của con trai hai bác á|neutral
+002739|{kh oo1 ngz b ie3 tc n aa3 uz3 aw1 nc th i2 t u1 iz1 x e5 d aw6 iz6 ch o1 a1 nhz n aa3 uz3 aw1 nc .}|không biết nấu ăn thì tui sẽ dạy cho anh nấu ăn|neutral
+000538|{m a2 d a3 h a1 iz1 k uo3 nc x a3 chz n aw2 iz2 b oo3 nc m wa1 iz1 ng a2 nc m a2 k u5 ngz k o3 ng wa2 iz2 m uo1 .}|mà giá hai cuốn sách này bốn mươi ngàn mà cũng có người mua|neutral
+000628|{x a1 oz1 ng wa2 iz2 a1 nhz l a6 nhz ng aw3 tc v aa6 iz6 .}|sao người anh lạnh ngắt vậy|neutral
+003068|{e1 mc dd aa1 uz1 k o3 dd e6 pc k ow5 dd o3 dd aa1 uz1 .}|em đâu có đẹp cỡ đó đâu|neutral
+004376|{a1 nhz b i6 kh u2 ngz h a4 .}|anh bị khùng hả|angry
+004628|{ch o1 dd ee3 nc kh i1 a1 nhz ch uw3 ngz m i1 nhz dd wa6 kc .}|cho đến khi anh chứng minh được|angry
+000995|{l aa2 nc th uw3 h a1 iz1 .}|lần thứ hai|sad
+004085|{ee1 ee1 .}|ê ê|angry
+008705|{x a2 iz2 b i2 nhz aw3 kc k w i1 l a2 mc d i2 k o3 k oo1 ngz t aw3 kc t ie6 nc .}|xài bình ắc quy làm gì có công tắc tiện|neutral
+002690|{b a1 ng wa2 iz2 ng oo2 iz2 dd aa1 iz1 b a3 nc x a3 chz dd oo1 ngz k w a3 a2 .}|ba người ngồi đây bán sách đông quá à|neutral
+000498|{m oo6 tc ng a2 nc x a3 uz3 tr aw1 mc n aw1 mc m wa1 iz1 dd oo2 ngz ch uw3 .}|một ngàn sáu trăm năm mươi đồng chứ|neutral
+001953|{a1 nhz dd uw2 ngz k o3 dd ee3 nc g aa2 nc t u1 iz1 nh a1 .}|anh đừng có đến gần tui nha|angry
+003335|{r oo2 iz2 l aa3 iz3 t ie2 nc dd o3 ch uo6 kc dd oo3 ngz dd oo2 k ie1 r a1 .}|rồi lấy tiền đó chuộc đống đồ kia ra|neutral
+007396|{k o1 iz1 nh uw1 x o1 ngz .}|coi như xong|sad
+008647|{ng oo2 iz2 x uo3 ngz l u6 mc nh uw5 ngz dd oo2 ngz t ie2 nc t uw2 t aw1 iz1 m i2 nhz l a2 mc r a1 .}|ngồi xuống lụm những đồng tiền từ tay mình làm ra|neutral
+007053|{x a1 oz1 m a2 t u1 iz1 ch o1 a1 nhz v oo1 nh a2 t u1 iz1 ng u4 dd wa6 kc .}|sao mà tui cho anh vô nhà tui ngủ được|neutral
+002460|{d a6 ch a3 uz3 tr u3 kc dd aa1 iz1 a6 .}|dạ cháu Trúc đây ạ|neutral
+002962|{k o1 iz1 x a3 chz d u2 mc e1 mc nh a1 .}|coi sách giùm em nha|happy
+007720|{a1 nhz k o3 dd w a3 nc r a1 l a2 a1 iz1 h oo1 ngz .}|anh có đoán ra là ai hông|sad
+002408|{ch o1 n ee1 nc n o3 m ow3 iz3 b i6 dd uo4 iz4 r a1 kh o4 iz4 nh a2 .}|cho nên nó mới bị đuổi ra khỏi nhà|sad
+004036|{k u3 tc .}|cút|angry
+004827|{a1 nhz dd i1 t e2 r a1 dd o3 .}|anh đi tè ra đó|angry
+003140|{b a2 m wa2 iz2 .}|bà Mười|happy
+003469|{v ow3 iz3 l a6 iz6 ch aw3 kc l a2 n wa3 kc x a6 chz m a2 .}|với lại chắc là nước sạch mà|neutral
+001745|{b oo3 nc ng a2 nc n ee1 nc b a3 nc l a6 iz6 m wa2 iz2 ch i3 nc ng a2 nc .}|bốn ngàn nên bán lại mười chín ngàn|neutral
+004186|{d oo3 ngz nh uw1 t aa6 pc th ee4 d u6 kc x a3 ngz x ow3 mc a3 m a2 .}|giống như tập thể dục sáng sớm á mà|neutral
+003030|{th ow1 mc k w a3 .}|thơm quá|happy
+001702|{ch aw3 kc .}|chắc|angry
+008942|{h oo1 mc n aw1 iz1 h o6 kc m oo6 tc tr aw1 mc ch uw5 k a3 iz3 k u5 ngz dd wa6 kc .}|hôm nay học một trăm chữ cái cũng được|happy
+007256|{ee1 .}|ê|angry
+005364|{k o3 kh i1 n a2 oz2 m i1 nhz dd aw1 ngz dd a5 k w ee1 nc m i2 nhz r oo2 iz2 h oo1 ngz .}|có khi nào minh đăng đã quên mình rồi hông|sad
+003237|{b aa1 iz1 d ow2 tr ow4 v ee2 dd a2 l a6 tc k u5 ngz nh ow3 dd a2 l a6 tc r a1 nh ie3 tc .}|bây giờ trở về đà lạt cũng nhớ đà lạt ra nhiết|neutral
+007211|{k a3 iz3 k o1 nc ie3 nc v oo1 d w ie1 nc tr ow1 tr e4 nc v aa6 iz6 .}|cái con Yến vô duyên trơ trẻn vậy|neutral
+002385|{th ee3 n a2 oz2 k u5 ngz d aa6 nc m i2 nhz .}|thế nào cũng giận mình|neutral
+002021|{k o3 th ee4 nh i2 nc x w ie1 nc k w a1 th ow2 iz2 d a1 nc .}|có thể nhìn xuyên qua thời gian|neutral
+001406|{b a3 kc .}|bác|neutral
+009463|{n o3 iz3 ch w ie6 nc v ow3 iz3 b a1 m e6 a1 nhz .}|nói chuyện với ba mẹ anh|angry
+006519|{a1 nhz n o3 iz3 dd i1 .}|anh nói đi|neutral
+006619|{m wa1 m wa1 .}|mưa mưa|angry
+007442|{ph a4 iz4 ch i1 a1 nhz dd uw2 ngz l a2 mc dd aa1 uz1 ph a4 iz4 x i1 nc l oo5 iz5 .}|phải chi anh đừng làm đâu phải xin lỗi|angry
+006829|{v a2 e1 mc t i1 nc r aw2 ngz .}|và em tin rằng|sad
+005203|{b ie3 tc m aw6 tc t u1 iz1 m a2 dd a3 nhz .}|biết mặt tui mà đánh|angry
+002524|{h w a2 nc k a4 nhz k uo4 n a1 mc d ow2 .}|hoàn cảnh của nam giờ|neutral
+008865|{v i2 n a1 mc aw1 nc ch ow1 iz1 h uw1 h o4 ngz l a2 mc h o6 b uo2 nc ph ie2 nc x w iz3 tc ch ee3 tc .}|vì nam ăn chơi hư hỏng làm họ buồn phiền suýt chết|neutral
+006292|{n a1 mc .}|Nam|angry
+002249|{n e2 k o1 iz1 t u1 iz1 n e2 .}|nè coi tui nè|happy
+001138|{ch a3 uz3 kh oo1 ngz th ee4 n a2 oz2 m a2 .}|cháu không thể nào mà|neutral
+001686|{uo4 .}|ủa|neutral
+004971|{t a1 oz1 kh oo1 ngz k o3 h a6 iz6 m aw2 iz2 dd aa1 uz1 m aw2 iz2 dd uw2 ngz x ow6 .}|tao không có hại mày đâu mày đừng sợ|neutral
+005692|{a3 a3 a3 .}|á á á|angry
+002057|{r a3 ngz m a2 ch i6 uz6 dd uw6 ngz dd i1 .}|ráng mà chịu đựng đi|neutral
+008488|{d aa6 iz6 .}|dậy|angry
+008753|{t ie2 nc b a3 nhz m i2 n aw1 mc ng a2 nc n wa5 b oo3 nc m wa1 iz1 h a1 iz1 ng a2 nc .}|tiền bánh mì năm ngàn nữa bốn mươi hai ngàn|neutral
+006068|{k uo4 ng w ie6 tc a3 nhz k uo4 b a4 oz4 h w a2 th i2 dd o3 l a2 nh uw5 ngz k a3 iz3 k i4 n ie6 mc r aa3 tc dd a3 ngz nh ow3 v a2 .}|của nguyệt ánh của bảo hòa thì đó là những cái kỷ niệm rất đáng nhớ và|neutral
+001641|{e1 mc h oo1 ngz k o3 k aa2 nc dd o6 kc k i6 chz b a4 nc dd aa1 uz1 .}|em hông có cần đọc kịch bản đâu|neutral
+001337|{x a1 oz1 a1 nhz t uw6 ch u4 dd wa6 kc b a4 nc th aa1 nc .}|sao anh tự chủ được bản thân|neutral
+004097|{k uw3 uz3 t oo1 iz1 v ow3 iz3 k uw3 uz3 t oo1 iz1 v ow3 iz3 .}|cứu tôi với cứu tôi với|angry
+003983|{ch uw3 ng aw2 iz2 m a1 iz1 t u1 iz1 ph a4 iz4 dd i1 l a2 mc l a6 iz6 r oo2 iz2 dd aa1 uz1 k o3 th ow2 iz2 d a1 nc r a4 nhz dd aa1 uz1 .}|chứ ngày mai tui phải đi làm lại rồi đâu có thời gian rảnh đâu|neutral
+008322|{a1 nhz dd a5 d o6 nc x a6 chz x e5 ch wa1 d ow6 .}|anh đã dọn sạch sẽ chưa dợ|angry
+009096|{a1 nhz kh u2 ngz k w a3 a2 .}|anh khùng quá à|sad
+006140|{a1 nhz t ow3 iz3 dd aa1 iz1 l a2 mc k a3 iz3 d i2 .}|anh tới đây làm cái gì|neutral
+001334|{t oo4 ngz k oo6 ngz t aa3 tc k a4 l a2 .}|tổng cộng tất cả là|neutral
+001343|{x a1 oz1 kh oo1 ngz ng e1 tr a4 l ow2 iz2 h ee3 tc tr ow1 nc v aa6 iz6 tr ow2 iz2 .}|sao không nghe trả lời hết trơn vậy trời|neutral
+007658|{a1 nhz t a1 dd aa1 uz1 k o3 k w e1 nc a1 iz1 dd aa1 uz1 .}|anh ta đâu có quen ai đâu|neutral
+009356|{a1 nhz n aw2 iz2 x e5 ch ow4 t ee1 nc l a2 n a1 mc .}|anh này sẽ chở tên là Nam|neutral
+007235|{k wa4 ow4 dd aa1 iz1 m a2 .}|cửa ở đây mà|angry
+004728|{a1 nhz h ie2 uz2 .}|anh Hiều|neutral
+004045|{r oo2 iz2 x i1 nc l oo5 iz5 h w a2 iz2 v aa6 iz6 h a4 .}|rồi xin lỗi hoài vậy hả|angry
+001943|{t oo1 iz1 k o3 ng wa2 iz2 ie1 uz1 r oo2 .}|tôi có người yêu rồ|neutral
+004775|{v oo1 nh a2 dd i1 .}|vô nhà đi|neutral
+007510|{ow4 dd aa1 uz1 m a2 d a3 nc tr o1 ngz m u2 ngz k w a3 ch uw2 ngz v aa6 iz6 .}|ở đâu mà gián trong mùng quá chừng vậy|angry
+003087|{a1 nhz n o3 iz3 v aa6 iz6 l a2 x a1 oz1 .}|anh nói vậy là sao|angry
+006766|{dd uw2 ngz k o3 th e1 uz1 b a3 mc t u1 iz1 n wa5 dd i1 dd i1 .}|đừng có theo bám tui nữa đi đi|angry
+009073|{ch ow2 d i2 n wa5 l ee1 nc dd aa1 iz1 t oo1 iz1 ch ow4 v ee2 .}|chờ gì nữa lên đây tôi chở về|happy
+000892|{ow1 iz1 .}|ơi|angry
+005235|{t u1 iz1 dd aa1 uz1 k o3 d ow5 nc .}|tui đâu có giỡn|neutral
+008365|{k a2 ch ow3 nc .}|cà chớn|angry
+007861|{x a1 uz1 kh i1 n a1 mc r a1 v ie6 nc .}|sau khi nam ra viện|neutral
+000733|{m a2 a1 nhz b ie3 tc x a3 ngz d ow2 e1 mc n o3 iz3 d oo3 iz3 m wa2 iz2 m aa3 iz3 l aa2 nc r oo2 iz2 dd o3 .}|mà anh biết sáng giờ em nói dối mười mấy lần rồi đó|neutral
+003299|{m aw1 iz1 t wa4 ngz .}|may tưởng|neutral
+008935|{h a2 x e5 n aa3 uz3 x o1 ngz r oo2 iz2 t oo3 iz3 k a4 .}|hà sẽ nấu xong rồi tối cả|neutral
+006294|{a1 nhz m a2 k ie3 mc ch w ie6 nc v ow3 iz3 a1 nhz h ie2 uz2 a3 .}|anh mà kiếm chuyện với anh hiều á|angry
+008709|{a1 nhz kh oo1 ngz b ie3 tc .}|anh không biết|sad
+004275|{e1 mc k u2 iz2 l uo1 nc .}|em cùi luôn|happy
+003223|{th ie6 tc .}|thiệt|neutral
+008591|{a1 nhz k u5 ngz m o1 ngz nh uw1 v aa6 iz6 dd i1 l a2 v wa2 .}|anh cũng mong như vậy đi là vừa|neutral
+005660|{m a2 a1 nhz d ee5 th wa1 ngz th ie6 tc a3 .}|mà anh dễ thương thiệt á|happy
+007103|{e1 mc kh oo1 ngz k o3 l a2 mc v aa6 iz6 dd wa6 kc .}|em không có làm vậy được|neutral
+007422|{b oo6 a1 nhz t i3 nhz dd e1 mc ng w ie1 nc dd oo3 ngz dd oo2 n aw2 iz2 r oo2 iz2 dd i1 b oo6 v ee2 nh a2 h a4 .}|bộ anh tính đem nguyên đống đồ này rồi đi bộ về nhà hả|neutral
+004352|{t u1 iz1 k o3 nh ie2 uz2 d a1 oz1 l aw3 mc a3 nh a1 .}|tui có nhiều dao lắm á nha|angry
+006139|{x oo3 t ie2 nc dd o3 dd oo3 iz3 v ow3 iz3 ch a3 uz3 dd aa1 uz1 ph a4 iz4 l a2 nh o4 dd aa1 uz1 .}|số tiền đó đối với cháu đâu phải là nhỏ đâu|angry
+006655|{k o3 x a1 oz1 h oo1 ngz .}|có sao hông|angry
+008456|{k o3 x a1 oz1 h oo1 ngz .}|có sao hông|neutral
+000958|{x a1 oz1 n a1 mc l a6 iz6 ow4 dd aa1 iz1 .}|sao Nam lại ở đây|neutral
+007740|{d a6 ch a3 uz3 k a3 mc ow1 nc h a1 iz1 b a3 kc .}|dạ cháu cám ơn hai bác|neutral
+001714|{ie1 uz1 ph u6 n uw5 h a4 .}|yêu phụ nữ hả|angry
+008116|{n ee1 nc x ow6 k w a3 tr oo3 nc l uo1 nc r oo2 iz2 .}|nên sợ quá trốn luôn rồi|neutral
+002755|{b a2 m wa2 iz2 .}|bà Mười|angry
+008201|{ow2 .}|ờ|neutral
+007459|{l u3 kc dd o3 l a2 kh w a4 ngz m wa2 iz2 d ow2 .}|lúc đó là khoảng mười giờ|neutral
+001214|{x a1 oz1 h oo1 ngz n o3 iz3 b aw2 ngz t ie3 ngz v ie6 tc m a2 n o3 iz3 t ie3 ngz a1 nhz kh oo1 ngz d ow6 .}|sao hông nói bằng tiếng việt mà nói tiếng anh không dợ|neutral
+001297|{g ee1 k w a3 a2 .}|ghê quá à|angry
+003183|{m a2 k u5 ngz g o6 iz6 l a2 ng ee6 th w aa6 tc n wa5 h a4 .}|mà cũng gọi là nghệ thuật nữa hả|neutral
+006572|{t a1 oz1 x e5 t i2 mc t u6 iz6 b aw1 iz1 ch o1 dd ee3 nc kh i1 n a2 oz2 t u6 iz6 b aw1 iz1 tr a4 dd u4 th i2 th oo1 iz1 .}|tao sẽ tìm tụi bay cho đến khi nào tụi bay trả đủ thì thôi|happy
+005707|{b aa1 iz1 d ow2 ch aa1 uz1 ph a4 iz4 v ee2 g aa3 pc .}|bây giờ châu phải về gấp|neutral
+006310|{ch a2 x a2 nc n wa3 kc nh a2 t aw3 mc dd i1 .}|chà sàn nước nhà tắm đi|neutral
+004377|{v wa2 i3 tc v oo3 nc l a6 iz6 kh oo1 ngz dd o2 iz2 h o4 iz4 ch w ie1 nc m oo1 nc t aw1 iz1 ng ee2 n wa5 .}|vừa ít vốn lại không đòi hỏi chuyên môn tay nghề nữa|happy
+004406|{x a1 oz1 m aa3 tc h a1 iz1 k uo3 nc x a3 chz v aa6 iz6 .}|sao mất hai cuốn sách vậy|neutral
+005279|{l a2 kh w a4 ngz th ow2 iz2 d a1 nc ch a3 uz3 th aa3 iz3 k uo6 kc dd ow2 iz2 ch a3 uz3 dd e6 pc nh aa3 tc .}|là khoảng thời gian cháu thấy cuộc đời cháu đẹp nhất|neutral
+005000|{b oo5 ngz d uw1 ngz m aa3 tc h ee3 tc ng wa2 iz2 th aa1 nc .}|bỗng dưng mất hết người thân|sad
+005095|{a1 nhz ng oo2 iz2 ie1 nc dd o3 .}|anh ngồi yên đó|sad
+008448|{m a2 a1 nhz k o3 ng e1 t ie3 ngz ch i1 mc h o3 tc h oo1 ngz .}|mà anh có nghe tiếng chim hót hông|happy
+007844|{n o3 l a2 mc x aa3 uz3 m aw6 tc ch i6 e1 mc ph u6 n uw5 t u6 iz6 t u1 iz1 k w a3 a2 .}|nó làm xấu mặt chị em phụ nữ tụi tui quá à|neutral
+004654|{h o6 b ie3 tc e1 mc dd a1 ngz ow4 l aa6 uz6 r oo2 iz2 h o6 dd uo4 iz4 e1 mc dd i1 .}|họ biết em đang ở lậu rồi họ đuổi em đi|neutral
+007167|{l a2 mc d i2 tr o1 ngz dd o3 m a2 t u1 iz1 k ee1 uz1 u1 mc x u2 mc n aw5 iz5 d ow2 kh oo1 ngz ng e1 d ow6 .}|làm gì trong đó mà tui kêu um sùm nãy giờ không nghe dợ|neutral
+008743|{ng aw2 iz2 m a1 iz1 a1 nhz nh ow3 dd i1 ch ow4 n wa3 kc dd o3 .}|ngày mai anh nhớ đi chở nước đó|neutral
+005041|{ng u4 v aa6 iz6 l aa3 iz3 dd aa1 uz1 m a2 aw1 nc .}|ngủ vậy lấy đâu mà ăn|angry
+005590|{th i2 b ie3 tc b a1 oz1 d ow2 m ow3 iz3 m ow4 dd wa6 kc t ie6 mc x a3 chz .}|thì biết bao giờ mới mở được tiệm sách|neutral
+007596|{tr w ie6 nc dd a1 ngz h aw1 iz1 a2 .}|truyện đang hay à|sad
+006946|{d a6 e1 mc t ow3 iz3 l ie2 nc .}|dạ em tới liền|neutral
+002388|{t ie2 nc k uo4 t oo1 iz1 .}|tiền của tôi|angry
+006913|{ch a3 nc a1 nhz k w a3 a2 .}|chán anh quá à|neutral
+007655|{t u1 iz1 dd a3 nhz a1 nhz b aa1 iz1 d ow2 dd o3 .}|tui đánh anh bây giờ đó|angry
+007757|{m i2 nhz th i2 kh w a4 th aa1 nc .}|mình thì khỏa thân|neutral
+009174|{ch a3 uz3 nh ow3 r oo2 iz2 .}|cháu nhớ rồi|neutral
+006645|{t a6 iz6 x a1 oz1 a1 nhz aa3 iz3 l a6 iz6 kh oo1 ngz t ow3 iz3 .}|tại sao anh ấy lại không tới|sad
+009330|{dd uw2 ngz k o3 t aw3 mc .}|đừng có tắm|neutral
+004825|{a1 nhz v ee2 nh a2 x i1 nc l oo5 iz5 .}|anh về nhà xin lỗi|angry
+004245|{m a2 a1 nhz k u5 ngz l wa2 iz2 th ie6 tc a3 .}|mà anh cũng lười thiệt á|neutral
+006443|{dd uw2 ngz k o3 b aw3 tc k o1 nc th o4 iz4 k uo4 t u1 iz1 dd uw2 ngz k o3 b aw3 tc k o1 nc th o4 iz4 k uo4 t u1 iz1 .}|đừng có bắt con thỏi của tui đừng có bắt con thỏi của tui|angry
+000621|{ow2 t ie6 mc x a3 chz n aw2 iz2 l a2 k uo4 k o1 nc l a2 d o1 k o1 nc n o3 iz3 d oo3 iz3 m ow3 iz3 k o3 .}|ờ tiệm sách này là của con là do con nói dối mới có|neutral
+002130|{tr ow2 iz2 ow1 iz1 l a2 mc nh uw1 ow4 tr u1 ngz t aa1 mc d ee5 k ie3 mc ch oo5 n a2 oz2 b a3 nc l aw3 mc v aa6 iz6 dd o3 .}|trời ơi làm như ở trung tâm dễ kiếm chỗ nào bán lắm vậy đó|neutral
+009389|{v aa6 iz6 th i2 t oo1 iz1 m ow3 iz3 tr i6 dd wa6 kc a1 nhz ch uw3 .}|vậy thì tôi mới trị được anh chứ|happy
+005485|{t u1 iz1 n o3 iz3 h oo1 ngz l a2 h oo1 ngz m a2 .}|tui nói hông là hông mà|neutral
+003609|{nh uw1 ngz m a2 n ee3 uz3 kh oo1 ngz ph a4 iz4 k uo4 b a4 oz4 n a1 mc a3 .}|nhưng mà nếu không phải của bảo nam á|neutral
+006534|{dd ie2 uz2 k ie6 nc th uw3 nh aa3 tc a3 .}|điều kiện thứ nhất á|neutral
+003682|{th i2 t u1 iz1 k u5 ngz dd ow5 aw3 iz3 n aw3 iz3 .}|thì tui cũng đỡ áy náy|neutral
+005412|{m a2 k o1 nc b a6 nc g a3 iz3 k uo4 a1 nhz a3 h a4 .}|mà con bạn gái của anh á hả|neutral
+002068|{dd o3 l a2 ch w ie6 nc k uo4 a1 nhz v ow3 iz3 b a1 m e6 a1 nhz .}|đó là chuyện của anh với ba mẹ anh|angry
+005969|{n aw2 mc dd o3 m i2 nhz dd i1 nh a1 .}|nằm đó mình đi nha|neutral
+005359|{h a1 iz1 b a3 kc k uw3 ie1 nc t aa1 mc .}|hai bác cứ yên tâm|sad
+006999|{d a6 .}|dạ|neutral
+001161|{a1 nhz n a1 mc b aa1 iz1 d ow2 r aa3 tc l a2 t oo6 iz6 ng ie6 pc v a2 dd a3 ngz th wa1 ngz .}|anh Nam bây giờ rất là tội nghiệp và đáng thương|sad
+004320|{a1 nhz h oo1 ngz nh ow3 x a3 ngz d ow2 t oo1 iz1 dd o6 kc h ee3 tc n wa4 k uo3 nc d ee3 m e2 nc ph uw1 uz1 l uw1 uz1 k i3 h a4 .}|anh hông nhớ sáng giờ tôi đọc hết nửa cuốn dế mèn phưu lưu kí hả|neutral
+001121|{k aa2 mc ch aw6 tc ow4 dd aa1 iz1 n e2 .}|cầm chặt ở đây nè|neutral
+002853|{m oo6 tc ng a2 nc k uo4 m i2 nhz v aa5 nc ch wa1 k ie3 mc r a1 .}|một ngàn của mình vẫn chưa kiếm ra|neutral
+008309|{kh oo1 ngz ph a4 iz4 m a2 .}|không phải mà|sad
+003498|{dd oo2 dd e6 pc v aa6 iz6 ch aw3 kc b a3 nc dd wa6 kc nh ie2 uz2 t ie2 nc l aw3 mc a3 .}|đồ đẹp vậy chắc bán được nhiều tiền lắm á|neutral
+008024|{e1 mc t wa4 ngz l a2 th uw1 k uo4 m i1 nhz dd aw1 ngz r oo2 iz2 nh ow2 a1 nhz dd o6 kc d u2 mc nh ow3 h oo1 ngz .}|em tưởng là thư của Minh Đăng rồi nhờ anh đọc dùm nhớ hông|neutral
+003126|{m oo6 tc d ow2 r wa5 iz5 r a1 dd aa1 iz1 b a3 nc x a3 chz ph u6 t u1 iz1 nh a1 .}|một giờ rưỡi ra đây bán sách phụ tui nha|neutral
+009034|{a1 nhz h ie2 uz2 h a3 tc k a3 iz3 l wa1 ngz h aw1 iz1 th aa3 iz3 m oo2 .}|anh hiều hát cái lương hay thấy mồ|happy
+001448|{a1 nhz nh ow3 l u3 kc tr wa3 kc a3 b a4 oz4 n a1 mc v ie3 tc th uw1 x i1 nc l oo5 iz5 e1 mc .}|anh nhớ lúc trước á Bảo Nam viết thư xin lỗi em|neutral
+005566|{n ee3 uz3 t oo1 iz1 n o3 iz3 t oo1 iz1 th aa6 tc x uw6 k aa2 nc a1 nhz b a3 nc x a3 chz ph u6 t u1 iz1 .}|nếu tôi nói tôi thật sự cần anh bán sách phụ tui|neutral
+005549|{ch i4 k aa2 nc h a3 tc l a2 dd wa6 kc r oo2 iz2 .}|chỉ cần hát là được rồi|neutral
+004453|{k ow2 e1 mc m ow2 .}|cờ em mờ|neutral
+005808|{t u1 iz1 h oo1 ngz k o3 b a3 nc x a3 chz ch o1 a1 nhz dd aa1 uz1 .}|tui hông có bán sách cho anh đâu|neutral
+003486|{uo4 v aa6 iz6 h a4 .}|ủa vậy hả|neutral
+001506|{x a1 oz1 t aa6 pc x e1 dd a6 pc v ee2 x ow3 mc d ow6 .}|sao tập xe đạp về sớm dợ|neutral
+005650|{uw2 .}|ừ|sad
+007158|{ch w ie6 nc r ie1 ngz th oo1 iz1 a6 .}|chuyện riêng thôi ạ|neutral
+001213|{a1 nhz k aa2 mc h a1 iz1 tr aw1 mc dd i1 .}|anh cầm hai trăm đi|neutral
+009118|{dd ee4 t u1 iz1 th aa3 iz3 t oo6 iz6 ng ie6 pc ch o1 a1 nhz m wa6 nc t ie2 nc h a4 .}|để tui thấy tội nghiệp cho anh mượn tiền hả|neutral
+003120|{dd u4 th uw3 t ie2 nc h ee3 tc tr ow1 nc a3 .}|đủ thứ tiền hết trơn á|neutral
+000008|{th i2 t ee1 nc tr oo6 mc n o3 b i6 b o3 ngz m a2 .}|thì tên trộm nó bị bóng mà|happy
+001438|{th i2 a1 nhz k oo3 g aw3 ngz a1 nhz l a2 mc th aa6 tc t oo3 tc dd uw2 ngz g aa1 iz1 r a1 th ie6 tc h a6 iz6 d i2 h ee3 tc .}|thì anh cố gắng anh làm thật tốt đừng gây ra thiệt hại gì hết|neutral
+001223|{n aw5 iz5 d ow2 b a3 kc n o3 iz3 .}|nãy giờ bác nói|neutral
+001523|{dd o3 l a2 b oo6 ph i1 mc dd e6 pc t uw2 ngz x aw1 ngz t i1 m e3 tc th i2 k u5 ngz k a3 chz dd aa1 iz1 k u5 ngz kh a3 l aa1 uz1 r oo2 iz2 .}|đó là bộ phim đẹp từng xăng ti mét thì cũng cách đây cũng khá lâu rồi|neutral
+006662|{m a2 g i1 dd u3 ngz t ee1 nc a1 nhz l a2 m aw1 iz1 l aw3 mc r oo2 iz2 .}|mà ghi đúng tên anh là may lắm rồi|neutral
+007357|{ch i4 k o3 m oo5 iz5 m i2 nhz e1 mc ow4 nh a2 th oo1 iz1 .}|chỉ có mỗi mình em ở nhà thôi|neutral
+006978|{l a2 mc d i2 m a2 k o3 dd ie6 ch i4 .}|làm gì mà có địa chỉ|neutral
+006027|{ee1 .}|ê|neutral
+002058|{x a1 oz1 ch ee3 tc m wa2 iz2 .}|sao chết Mười|happy
+001147|{a1 nhz n o3 iz3 th ie6 tc a3 h a4 .}|anh nói thiệt á hả|happy

@@ -1,4 +1,5 @@
-data
 __pycache__
 outputs
 *.zip
+data/mels
+data/data.txt
