@@ -74,13 +74,13 @@ def prepare_dataloaders(config):
     collate_fn = TextMelCollate(config["n_frames_per_step"])
 
     train_sampler = DistributedSampler(dataset=trainset, shuffle=True)
-    val_sampler = DistributedSampler(dataset=valset, shuffle=True)
+    val_sampler = DistributedSampler(dataset=valset, shuffle=False)
 
     train_loader = DataLoader(
         trainset, 
         shuffle=False,sampler=train_sampler,
-        batch_size=config["batch_size"], pin_memory=True,
-        num_workers=2,
+        batch_size=config["batch_size"], pin_memory=False,
+        num_workers=1,
         drop_last=True, collate_fn=collate_fn
     )
     
@@ -206,7 +206,7 @@ def train(config):
         
         if is_main_process():
             print("###train loss at epoch={}: \nmel_loss={:4f} gate_loss={:4f} emotion_loss={:4f}\n" \
-                .format(step, statistics.mean(train_mel_losses), statistics.mean(train_gate_losses), statistics.mean(train_emotion_losses)))
+                .format(epoch, statistics.mean(train_mel_losses), statistics.mean(train_gate_losses), statistics.mean(train_emotion_losses)))
             
 def validate(model, criterion, val_loader, step):
     model.eval()
