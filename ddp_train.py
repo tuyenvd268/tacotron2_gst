@@ -80,7 +80,7 @@ def prepare_dataloaders(config):
         trainset, 
         shuffle=False,sampler=train_sampler,
         batch_size=config["batch_size"], pin_memory=False,
-        num_workers=0,
+        num_workers=1,
         drop_last=True, collate_fn=collate_fn
     )
     
