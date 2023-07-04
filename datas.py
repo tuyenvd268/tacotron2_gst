@@ -35,16 +35,18 @@ class TextMelDataset(Dataset):
         return text_norm
     
     def get_mel(self, filename):
-        path = os.path.join(self.wav_dir, filename+".wav")
-        audio, sampling_rate = utils.load_wav_to_torch(path)
-        if sampling_rate != self.stft.sampling_rate:
-            raise ValueError("{} {} SR doesn't match target {} SR".format(
-                sampling_rate, self.stft.sampling_rate))
-        audio_norm = audio / self.max_wav_value
-        audio_norm = audio_norm.unsqueeze(0)
-        audio_norm = torch.autograd.Variable(audio_norm, requires_grad=False)
-        melspec = self.stft.mel_spectrogram(audio_norm)
-        melspec = torch.squeeze(melspec, 0)
+        path = os.path.join(self.wav_dir, filename+".npy")
+        # audio, sampling_rate = utils.load_wav_to_torch(path)
+        # if sampling_rate != self.stft.sampling_rate:
+        #     raise ValueError("{} {} SR doesn't match target {} SR".format(
+        #         sampling_rate, self.stft.sampling_rate))
+        # audio_norm = audio / self.max_wav_value
+        # audio_norm = audio_norm.unsqueeze(0)
+        # audio_norm = torch.autograd.Variable(audio_norm, requires_grad=False)
+        # melspec = self.stft.mel_spectrogram(audio_norm)
+        # melspec = torch.squeeze(melspec, 0)
+        melspec = torch.from_numpy(np.load(path))
+
         return melspec
     
     def get_mel_text_pair(self, metadata):
