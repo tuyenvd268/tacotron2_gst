@@ -207,7 +207,10 @@ class Decoder(nn.Module):
             lengths (tensor): shape=[B]
         """
         max_len = torch.max(lengths).item()
-        ids = torch.arange(0, max_len).to(self.config['device'])
+        if torch.cuda.is_available():
+            ids = torch.arange(0, max_len).cuda()
+        else:
+            ids = torch.arange(0, max_len)
         mask = (ids < lengths.unsqueeze(1)).bool()
         
         return mask
