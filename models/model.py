@@ -31,22 +31,6 @@ class Tacotron2(nn.Module):
             torch.randn(4, 128)
         )
 
-
-    def parse_batch(self, batch):
-        emotion_label, text_padded, input_lengths, mel_padded, gate_padded, \
-            output_lengths = batch
-        text_padded = to_gpu(text_padded).long()
-        emotion_label = to_gpu(emotion_label).long()
-        input_lengths = to_gpu(input_lengths).long()
-        max_len = torch.max(input_lengths.data).item()
-        mel_padded = to_gpu(mel_padded).float()
-        gate_padded = to_gpu(gate_padded).float()
-        output_lengths = to_gpu(output_lengths).long()
-
-        return (
-            (text_padded, input_lengths, mel_padded, max_len, output_lengths),
-            (emotion_label, mel_padded, gate_padded))
-
     def parse_output(self, outputs, output_lengths=None):
         if self.mask_padding and output_lengths is not None:
             mask = ~get_mask_from_lengths(output_lengths)
@@ -64,17 +48,15 @@ class Tacotron2(nn.Module):
         text_lengths, output_lengths = text_lengths.data, output_lengths.data
         
         embedded_inputs = self.embedding(text_inputs).transpose(1, 2)
-        encoder_outputs = self.encoder(embedded_inputs, text_lengths)
-        
+        encoder_outputs = self.encoder(embedded_inputs, text_lengths)        
         emotion_embeddings = self.reference_encoder(mels.transpose(1, 2))
         attention_weight = torch.matmul(emotion_embeddings, self.emotion_embeddings.T)      
         attention_weight = torch.nn.functional.softmax(attention_weight, dim=1)
         
-        embedded_emotions = torch.matmul(attention_weight, self.emotion_embeddings) 
+        embedded_emotions = torch.matmul(attention_weight, self.emotion_embeddings).unsqueeze(1)
         emotion_predictions = attention_weight
-        
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
-        print(encoder_outputs, embedded_emotions)
+        
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         

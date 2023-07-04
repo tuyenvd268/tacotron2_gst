@@ -53,6 +53,7 @@ class Encoder(nn.Module):
         output, _ = nn.utils.rnn.pad_packed_sequence(output, batch_first=True)
         
         return output
+    
     def inference(self, x):
         for conv in self.convs:
             x = F.dropout(F.relu(conv(x)), 0.5, self.training)

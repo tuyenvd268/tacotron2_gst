@@ -110,7 +110,7 @@ def train(cfg_path):
         train_mel_losses, train_gate_losses, train_emotion_losses = [], [], []
         for batch in train_tqdm:
             model.zero_grad()
-            x, y = model.parse_batch(batch)
+            x, y = parse_batch(batch)
             y_pred = model(x)
             
             mel_loss, gate_loss, emotion_loss = criterion(y_pred, y)

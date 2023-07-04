@@ -9,8 +9,10 @@ def load_wav_to_torch(full_path):
 
 def get_mask_from_lengths(lengths):
     max_len = torch.max(lengths).item()
-    ids = torch.arange(0, max_len, out=torch.cuda.LongTensor(max_len))
-    # ids = torch.arange(0, max_len, out=torch.LongTensor(max_len))
+    if torch.cuda.is_available():
+        ids = torch.arange(0, max_len, out=torch.cuda.LongTensor(max_len))
+    else:
+        ids = torch.arange(0, max_len, out=torch.LongTensor(max_len))
     mask = (ids < lengths.unsqueeze(1)).bool()
     return mask
 
@@ -32,16 +34,16 @@ def load_yaml(path):
     return yml
 
 def parse_batch(batch):
-        emotion_label, text_padded, input_lengths, mel_padded, gate_padded, \
-            output_lengths = batch
-        text_padded = to_gpu(text_padded).long()
-        emotion_label = to_gpu(emotion_label).long()
-        input_lengths = to_gpu(input_lengths).long()
-        max_len = torch.max(input_lengths.data).item()
-        mel_padded = to_gpu(mel_padded).float()
-        gate_padded = to_gpu(gate_padded).float()
-        output_lengths = to_gpu(output_lengths).long()
+    emotion_label, text_padded, input_lengths, mel_padded, gate_padded, \
+        output_lengths = batch
+    text_padded = to_gpu(text_padded).long()
+    emotion_label = to_gpu(emotion_label).long()
+    input_lengths = to_gpu(input_lengths).long()
+    max_len = torch.max(input_lengths.data).item()
+    mel_padded = to_gpu(mel_padded).float()
+    gate_padded = to_gpu(gate_padded).float()
+    output_lengths = to_gpu(output_lengths).long()
 
-        return (
-            (text_padded, input_lengths, mel_padded, max_len, output_lengths),
-            (emotion_label, mel_padded, gate_padded))
+    return (
+        (text_padded, input_lengths, mel_padded, max_len, output_lengths),
+        (emotion_label, mel_padded, gate_padded))
