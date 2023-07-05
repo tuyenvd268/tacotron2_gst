@@ -112,7 +112,8 @@ def save_checkpoint(model, optimizer, step, path):
     
 def load_checkpoint(path, model, optimizer):
     state_dict = torch.load(path, map_location='cpu')
-    model.load_state_dict(state_dict["mode_state_dict"])
+    mode_state_dict = {key.lstrip("module."):value for key, value in state_dict["mode_state_dict"].items()}
+    model.load_state_dict(mode_state_dict)
     optimizer.load_state_dict(state_dict["optimizer_state_dict"])
     step = state_dict["step"]
     # epoch = state_dict["epoch"]
