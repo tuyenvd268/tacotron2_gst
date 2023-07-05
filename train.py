@@ -41,13 +41,12 @@ def init_model(config):
     
     return model
 
-def save_checkpoint(model, optimizer, learning_rate, step, path):
+def save_checkpoint(model, optimizer, step, path):
     torch.save(
         {
         "step":step,
         "mode_state_dict":model.state_dict(),
-        "optimizer_state_dict":optimizer.state_dict(),
-        "learning_rate":learning_rate
+        "optimizer_state_dict":optimizer.state_dict()
         }, 
         path
     )
@@ -57,13 +56,11 @@ def load_checkpoint(path, model, optimizer):
     state_dict = torch.load(path, map_location='cpu')
     model.load_state_dict(state_dict["mode_state_dict"])
     optimizer.load_state_dict(state_dict["optimizer_state_dict"])
-    learning_rate = state_dict["learning_rate"]
     step = state_dict["step"]
-    # epoch = state_dict["epoch"]
     
     print(f"load checkpoint from {path} at step {step}.")
     
-    return model, optimizer, learning_rate, step
+    return model, optimizer, step
 
 def init_logger_and_directories(config):
     current_time = datetime.now()
@@ -102,7 +99,7 @@ def train(cfg_path):
     )
     step = 1
     if os.path.exists(config["checkpoint"]):
-        model, optimizer, learning_rate, step = load_checkpoint(config["checkpoint"], model, optimizer)
+        model, optimizer, step = load_checkpoint(config["checkpoint"], model, optimizer)
     
     model.train()
     for epoch in range(0, int(config["epoch"])):
@@ -132,7 +129,7 @@ def train(cfg_path):
                     
             if step % int(config["save_checkpoint_per_steps"]) == 0:
                 state_dict_path = f'{config["checkpoint_dir"]}/checkpoint_{step}.pt'
-                save_checkpoint(model, optimizer, learning_rate, step, state_dict_path)
+                save_checkpoint(model, optimizer, step, state_dict_path)
                 
             if step % int(config["logging_per_steps"]) == 0:
                 val_mel_loss, val_gate_loss, val_emotion_loss = validate(model, criterion, val_loader, step)
