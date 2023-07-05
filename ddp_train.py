@@ -168,7 +168,6 @@ def train(config):
         # train_tqdm = tqdm(train_loader, desc=f"epoch: {epoch}")
         train_mel_losses, train_gate_losses, train_emotion_losses = [], [], []
         for batch in train_loader:
-            optimizer.zero_grad()
             model.zero_grad()
             
             x, y = parse_batch(batch)
