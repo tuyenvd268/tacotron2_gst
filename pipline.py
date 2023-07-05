@@ -17,6 +17,7 @@ MAX_WAV_VALUE = 32768.0
 class Pipline():
     def __init__(self, config) -> None:
         encoder_config = load_yaml("config.yml")
+        self.encoder_config=encoder_config
         self.encoder = init_model(encoder_config)
         
         self.encoder.load_state_dict(
@@ -72,9 +73,22 @@ class Pipline():
         
         return output_file
         
-    def infer_mel_spec(self, phoneme):
-        phoneme = torch.autograd.Variable(
-            torch.from_numpy(phoneme)).long()
-        mel_outputs, mel_outputs_postnet, _, alignments = self.encoder.inference(phoneme)
+    def infer_mel_spec(self, phoneme, emotion2weight=0):
+        emotion2weight = {
+            "angry": 0.1,
+            "happy": 0.1,
+            "sad": 0.3,
+            "neutral": 0.5
+        }
+        phoneme = torch.autograd.Variable(torch.from_numpy(phoneme)).long()
+     
+        emotion_weight=[0, 0, 0, 0]
+        for i in range(len(emotion_weight)):
+            emotion_weight[i] = emotion2weight[self.encoder_config["id2emotion"][i]]
+        
+        emotion_weight = torch.tensor(emotion_weight).unsqueeze(0)
+        
+        inputs = (phoneme, emotion_weight)
+        mel_outputs, mel_outputs_postnet, _, alignments = self.encoder.inference(inputs)
         
         return mel_outputs.squeeze(0).detach().numpy(), mel_outputs_postnet.squeeze(0).detach().numpy(), alignments.squeeze(0).detach().numpy()

@@ -110,18 +110,6 @@ def save_checkpoint(model, optimizer, step, path):
     )
     print(f"saved model and optimizer state dict at step {step} to {path}")
     
-def load_checkpoint(path, model, optimizer):
-    state_dict = torch.load(path)
-
-    model.load_state_dict(state_dict["mode_state_dict"])
-    optimizer.load_state_dict(state_dict["optimizer_state_dict"])
-    step = state_dict["step"]
-    # epoch = state_dict["epoch"]
-    
-    print(f"load checkpoint from {path} at step {step}.")
-    
-    return model, optimizer, step
-
 def init_logger_and_directories(config):
     current_time = datetime.now()
     current_time = current_time.strftime("%d-%m-%Y_%H:%M:%S")
@@ -150,16 +138,19 @@ def train(config):
     train_loader, val_loader = prepare_dataloaders(config)
     
     local_rank = int(os.environ['LOCAL_RANK'])
-    model = init_model(config=config)
+    model = init_model(config=config).cuda()
 
     criterion = Tacotron2Loss()    
     optimizer = torch.optim.Adam(model.parameters(), lr=float(config["learning_rate"]), weight_decay=float(config["weight_decay"]))
     
     step = 1
     if os.path.exists(config["checkpoint"]):
-        model, optimizer, step = load_checkpoint(config["checkpoint"], model, optimizer)
+        state_dict = torch.load(config["checkpoint"])
+        model.load_state_dict(state_dict["mode_state_dict"])
+        optimizer.load_state_dict(state_dict["optimizer_state_dict"])
+        step = state_dict["step"]
+        print("load checkpoint from {"}")
         
-    model = model.cuda()
     model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
         
     model.train()

@@ -57,8 +57,8 @@ class Tacotron2(nn.Module):
         embedded_emotions = torch.matmul(
             torch.nn.functional.softmax(attention_weight, dim=1), self.emotion_embeddings).unsqueeze(1)
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
-        
         embedded_emotions = self.dropout(embedded_emotions)
+        
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions.detach().clone()), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         
@@ -73,8 +73,16 @@ class Tacotron2(nn.Module):
             output_lengths)
 
     def inference(self, inputs):
-        embedded_inputs = self.embedding(inputs).transpose(1, 2)
+        text, emotion_weight = inputs
+        embedded_inputs = self.embedding(text).transpose(1, 2)
         encoder_outputs = self.encoder.inference(embedded_inputs)
+        
+        embedded_emotions = torch.matmul(emotion_weight, self.emotion_embeddings).unsqueeze(1)
+        
+        embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
+        encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
+        encoder_outputs = self.ffw(encoder_outputs)
+        
         mel_outputs, gate_outputs, alignments = self.decoder.inference(
             encoder_outputs)
 
