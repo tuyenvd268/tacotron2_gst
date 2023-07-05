@@ -148,11 +148,11 @@ def validate(model, criterion, val_loader, step):
     mel_losses, gate_losses, emotion_losses = [], [], []
     with torch.no_grad():
         for i, batch in enumerate(val_loader):
-            x, y = model.parse_batch(batch)
+            x, y = parse_batch(batch)
             y_pred = model(x)
             mel_loss, gate_loss, emotion_loss = criterion(y_pred, y)
             
-            loss = mel_loss + gate_loss + emotion_loss
+            loss = mel_loss+gate_loss+emotion_loss
             
             mel_losses.append(mel_loss.item())
             gate_losses.append(gate_loss.item())
