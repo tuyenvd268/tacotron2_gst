@@ -149,7 +149,7 @@ def train(config):
         model.load_state_dict(state_dict["mode_state_dict"])
         optimizer.load_state_dict(state_dict["optimizer_state_dict"])
         step = state_dict["step"]
-        print("load checkpoint from {"}")
+        print(f'load checkpoint from {config["checkpoint"]}')
         
     model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
         

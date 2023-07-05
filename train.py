@@ -44,9 +44,9 @@ def init_model(config):
 def save_checkpoint(model, optimizer, step, path):
     torch.save(
         {
-        "step":step,
-        "mode_state_dict":model.state_dict(),
-        "optimizer_state_dict":optimizer.state_dict()
+            "step":step,
+            "mode_state_dict":model.state_dict(),
+            "optimizer_state_dict":optimizer.state_dict()
         }, 
         path
     )
