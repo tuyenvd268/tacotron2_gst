@@ -151,9 +151,6 @@ def train(config):
     
     local_rank = int(os.environ['LOCAL_RANK'])
     model = init_model(config=config)
-    
-    model = model.cuda()
-    model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
 
     criterion = Tacotron2Loss()    
     optimizer = torch.optim.Adam(model.parameters(), lr=float(config["learning_rate"]), weight_decay=float(config["weight_decay"]))
@@ -161,6 +158,9 @@ def train(config):
     step = 1
     if os.path.exists(config["checkpoint"]):
         model, optimizer, step = load_checkpoint(config["checkpoint"], model, optimizer)
+        
+    model = model.cuda()
+    model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
         
     model.train()
     scaler = torch.cuda.amp.GradScaler(enabled=True)
