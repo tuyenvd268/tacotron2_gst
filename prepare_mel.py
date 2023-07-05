@@ -21,7 +21,7 @@ stft = TacotronSTFT(
         )
 max_wav_value = 32768.0
 
-wav_dir = "data/merged/wavs/*.wav"
+wav_dir = "data/wav/*.wav"
 mel_dir = "data/mels"
 for path in tqdm(glob(wav_dir)):
     audio, sampling_rate = load_wav_to_torch(path)

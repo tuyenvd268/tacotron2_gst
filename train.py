@@ -110,12 +110,15 @@ def train(cfg_path):
         train_mel_losses, train_gate_losses, train_emotion_losses = [], [], []
         for batch in train_tqdm:
             model.zero_grad()
+            optimizer.zero_grad()
+            
             x, y = parse_batch(batch)
             y_pred = model(x)
             
             mel_loss, gate_loss, emotion_loss = criterion(y_pred, y)
             
             loss = mel_loss+gate_loss+emotion_loss
+            
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), config["grad_clip_thresh"])
             optimizer.step()
