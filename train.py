@@ -57,15 +57,17 @@ def load_checkpoint(path, model, optimizer):
     try:
         model.load_state_dict(state_dict["mode_state_dict"])
         optimizer.load_state_dict(state_dict["optimizer_state_dict"])
+        print(f"load checkpoint from {path} at step {step}.")
     except:
         current_model_dict = model.state_dict()
         loaded_state_dict = state_dict["mode_state_dict"]
         new_state_dict={
             k:v if v.size()==current_model_dict[k].size() else current_model_dict[k] for k,v in zip(current_model_dict.keys(), loaded_state_dict.values())}
         model.load_state_dict(new_state_dict, strict=False)
+        print(f"Warning!!! Force loadding checkpoint from {path} at step {step}.")
     
     step = state_dict["step"]
-    print(f"load checkpoint from {path} at step {step}.")
+    
     
     return model, optimizer, step
 
