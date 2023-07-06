@@ -54,6 +54,7 @@ def save_checkpoint(model, optimizer, step, path):
     
 def load_checkpoint(path, model, optimizer):
     state_dict = torch.load(path, map_location="cpu")
+    step = state_dict["step"]
     try:
         model.load_state_dict(state_dict["mode_state_dict"])
         optimizer.load_state_dict(state_dict["optimizer_state_dict"])
@@ -66,7 +67,7 @@ def load_checkpoint(path, model, optimizer):
         model.load_state_dict(new_state_dict, strict=False)
         print(f"Warning!!! Force loadding checkpoint from {path} at step {step}.")
     
-    step = state_dict["step"]
+    
     
     
     return model, optimizer, step
