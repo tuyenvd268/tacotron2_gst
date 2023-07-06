@@ -23,6 +23,7 @@ class Pipline():
         self.encoder.load_state_dict(
             torch.load(config["checkpoint"], 
                         map_location=torch.device('cpu'))['mode_state_dict'])
+        self.encoder.eval()
     
         print(f'load: {config["checkpoint"]}')
         
