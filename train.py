@@ -53,11 +53,18 @@ def save_checkpoint(model, optimizer, step, path):
     print(f"saved model and optimizer state dict at step {step} to {path}")
     
 def load_checkpoint(path, model, optimizer):
-    state_dict = torch.load(path, map_location='cpu')
-    model.load_state_dict(state_dict["mode_state_dict"])
-    optimizer.load_state_dict(state_dict["optimizer_state_dict"])
-    step = state_dict["step"]
+    state_dict = torch.load(path, map_location="cpu")
+    try:
+        model.load_state_dict(state_dict["mode_state_dict"])
+        optimizer.load_state_dict(state_dict["optimizer_state_dict"])
+    except:
+        current_model_dict = model.state_dict()
+        loaded_state_dict = state_dict["mode_state_dict"]
+        new_state_dict={
+            k:v if v.size()==current_model_dict[k].size() else current_model_dict[k] for k,v in zip(current_model_dict.keys(), loaded_state_dict.values())}
+        model.load_state_dict(new_state_dict, strict=False)
     
+    step = state_dict["step"]
     print(f"load checkpoint from {path} at step {step}.")
     
     return model, optimizer, step

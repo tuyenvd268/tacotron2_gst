@@ -25,10 +25,11 @@ class Tacotron2(nn.Module):
         self.decoder = Decoder(config).to(config['device'])
         self.postnet = Postnet(config).to(config['device'])
         self.reference_encoder = Reference_Encoder(config)
-        self.ffw = nn.Linear(768, 512)
+        self.ffw = nn.Linear(640, 512)
+        self.dropout = nn.Dropout(0.2)
         
         self.emotion_embeddings = nn.Parameter(
-            torch.randn(4, 256)
+            torch.randn(4, 128)
         )
 
     def parse_output(self, outputs, output_lengths=None):
@@ -57,6 +58,7 @@ class Tacotron2(nn.Module):
             torch.nn.functional.softmax(attention_weight, dim=1), self.emotion_embeddings).unsqueeze(1)
         
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)        
+        embedded_emotions = self.dropout(embedded_emotions)
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         
