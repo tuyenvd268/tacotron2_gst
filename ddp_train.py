@@ -146,18 +146,19 @@ def train(config):
     step = 1
     if os.path.exists(config["checkpoint"]):
         state_dict = torch.load(config["checkpoint"])
+        step = state_dict["step"]
         try:
             model.load_state_dict(state_dict["mode_state_dict"])
             optimizer.load_state_dict(state_dict["optimizer_state_dict"])
+            
+            print(f'load checkpoint from {config["checkpoint"]}')
         except:
             current_model_dict = model.state_dict()
             loaded_state_dict = state_dict["mode_state_dict"]
             new_state_dict={
                 k:v if v.size()==current_model_dict[k].size() else current_model_dict[k] for k,v in zip(current_model_dict.keys(), loaded_state_dict.values())}
             model.load_state_dict(new_state_dict, strict=False)
-        
-        step = state_dict["step"]
-        print(f'load checkpoint from {config["checkpoint"]}')
+            print(f'Warning!!! Force load checkpoint from {config["checkpoint"]}')
         
     model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
         
