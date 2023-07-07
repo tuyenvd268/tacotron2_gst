@@ -77,6 +77,7 @@ class Tacotron2(nn.Module):
         embedded_inputs = self.embedding(text).transpose(1, 2)
         encoder_outputs = self.encoder.inference(embedded_inputs)
         
+        print("emotion_weight: ", emotion_weight)
         embedded_emotions = torch.matmul(emotion_weight, self.emotion_embeddings).unsqueeze(1)
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)

@@ -76,10 +76,10 @@ class Pipline():
         
     def infer_mel_spec(self, phoneme, emotion2weight=0):
         emotion2weight = {
-            "angry": 0.1,
-            "happy": 0.1,
-            "sad": 0.3,
-            "neutral": 0.5
+            "angry": 0.0,
+            "happy": 0.0,
+            "sad": 0.0,
+            "neutral": 1.0
         }
         phoneme = torch.autograd.Variable(torch.from_numpy(phoneme)).long()
      

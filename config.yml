@@ -6,7 +6,7 @@ save_checkpoint_per_steps: 1000
 logging_per_steps: 1000
 
 checkpoint_dir: 'outputs/checkpoints'
-checkpoint: 'outputs/checkpoints/checkpoint_23000.pt'
+checkpoint: 'outputs/checkpoints/checkpoint_44000.pt'
 device: 'cpu'
 log_dir: 'outputs/logs'
 
