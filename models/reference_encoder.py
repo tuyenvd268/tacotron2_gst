@@ -109,19 +109,17 @@ class Reference_Encoder(nn.Module):
         self.conv_net = Conv_Net(
             channels=[80, 128, 128, 256, 256, 128], 
             conv_kernels=[3, 3, 3, 3, 3], conv_strides=[2, 1, 2, 1, 2], 
-            dropout=0.2
+            dropout=0.1
         )
-        self.dropout = nn.Dropout(0.2)
         
         self.attn_head = AdditiveAttention(
-            dropout=0.2,
+            dropout=0.1,
             query_vector_dim=128,
             candidate_vector_dim=128,
         )
 
     def forward(self, inputs):
         outputs= self.conv_net(inputs)
-        outputs = self.dropout(outputs)
         outputs = self.attn_head(outputs)
         
         return outputs
