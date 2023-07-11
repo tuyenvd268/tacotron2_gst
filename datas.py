@@ -61,7 +61,7 @@ class TextMelDataset(Dataset):
         mel = self.get_mel(wav_id)
         emotion_label = torch.nn.functional.one_hot(torch.tensor(self.emotion2id[emotion]), num_classes=4).float()
         emotion_label = emotion_label.numpy()
-        emotion_label = self.smooth_labels(emotion_label)
+        # emotion_label = self.smooth_labels(emotion_label)
         
         return (text, mel, emotion_label)
     def __getitem__(self, index):
