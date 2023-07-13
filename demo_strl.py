@@ -21,11 +21,17 @@ if __name__ == "__main__":
     st.title("Expressive Text To Speech (Demo)")
 
     text = st.text_input("Enter text")
+    neutral = st.slider('Neutral', 0.0, 1.0, 0.0)
+    happy = st.slider('Happy', 0.0, 1.0, 0.0)
+    sad = st.slider('Sad', 0.0, 1.0, 0.0)
+    angry = st.slider('Angry', 0.0, 1.0, 0.0)
 
     display_log = st.checkbox("Print Log")
 
     if st.button("run"):
-        output_path, text, normed_text, phoneme, mel_spec, mel_outputs_postnet, alignments =  pipline.infer(text)
+        output_path, text, normed_text, phoneme, mel_spec, mel_outputs_postnet, alignments =  \
+            pipline.infer(text, neutral=neutral, happy=happy, angry=angry, sad=sad)
+            
         audio_file = open(f'{output_path}', "rb")
         audio_bytes = audio_file.read()
         st.markdown(f"## Audio : ")

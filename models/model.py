@@ -53,7 +53,6 @@ class Tacotron2(nn.Module):
         emotion_embeddings = self.reference_encoder(mels.transpose(1, 2))
         attention_weight = torch.matmul(emotion_embeddings, self.emotion_embeddings.T)
         emotion_predictions = attention_weight
-        
         embedded_emotions = torch.matmul(
             torch.nn.functional.softmax(attention_weight, dim=1), self.emotion_embeddings).unsqueeze(1)
         

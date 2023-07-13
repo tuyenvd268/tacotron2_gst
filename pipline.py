@@ -37,9 +37,15 @@ class Pipline():
         self.vocoder.eval()
         self.vocoder.remove_weight_norm()
         
-    def infer(self, text):
+    def infer(self, text, happy, angry, sad, neutral):
+        emotion2weight = {
+            "angry": angry,
+            "happy": happy,
+            "sad": sad,
+            "neutral": neutral
+        }
         normed_text, phoneme_ids, phoneme = self.prepare_input_for_infer(text)
-        mel_spec, mel_outputs_postnet, alignments= self.infer_mel_spec(phoneme_ids)        
+        mel_spec, mel_outputs_postnet, alignments= self.infer_mel_spec(phoneme_ids, emotion2weight=emotion2weight)        
         output_path = self.infer_wav(mel_spec)
 
         return output_path, text, normed_text, phoneme, mel_spec, mel_outputs_postnet, alignments
@@ -75,12 +81,7 @@ class Pipline():
         return output_file
         
     def infer_mel_spec(self, phoneme, emotion2weight=0):
-        emotion2weight = {
-            "angry": 0.0,
-            "happy": 0.0,
-            "sad": 0.0,
-            "neutral": 1.0
-        }
+        
         phoneme = torch.autograd.Variable(torch.from_numpy(phoneme)).long()
      
         emotion_weight=[0, 0, 0, 0]
