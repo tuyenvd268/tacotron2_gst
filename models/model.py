@@ -58,7 +58,7 @@ class Tacotron2(nn.Module):
         
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
         embedded_emotions = self.dropout(embedded_emotions)
-        encoder_outputs = torch.cat((encoder_outputs, embedded_emotions.detach().clone()), dim=2)
+        encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         
         mel_outputs, gate_outputs, alignments = self.decoder(
