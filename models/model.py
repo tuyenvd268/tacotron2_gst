@@ -54,14 +54,12 @@ class Tacotron2(nn.Module):
         self.encoder = Encoder(config).to(config['device'])
         self.decoder = Decoder(config).to(config['device'])
         self.postnet = Postnet(config).to(config['device'])
+        
         self.gst = GST(config)
         self.tpnet = TPSENet(text_dims=512, style_dims=256)
         self.ffw = nn.Linear(768, 512)
         self.dropout = nn.Dropout(0.1)
         
-        self.emotion_embeddings = nn.Parameter(
-            torch.randn(4, 128)
-        )
 
     def parse_output(self, outputs, output_lengths=None):
         if self.mask_padding and output_lengths is not None:
