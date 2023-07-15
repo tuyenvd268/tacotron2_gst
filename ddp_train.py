@@ -161,10 +161,12 @@ def train(config):
             print(f'Warning!!! Force load checkpoint from {config["checkpoint"]}')
         
     if step > config["reference_step"]:
-        layers = [model.reference_encoder, model.emotion_embeddings]
+        layers = [model.reference_encoder,]
         for module in layers:
             for param in module.parameters():
                 param.requires_grad = False
+                
+        model.emotion_embeddings.requires_grad = False
         print("freezing reference encoder")
 
     model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
