@@ -50,6 +50,7 @@ class Tacotron2(nn.Module):
         ).to(config['device'])
         std = sqrt(2.0 / (config["n_symbols"] + config["symbols_embedding_dim"]))
         val = sqrt(3.0) * std  # uniform bounds for std
+        
         self.embedding.weight.data.uniform_(-val, val)
         self.encoder = Encoder(config).to(config['device'])
         self.decoder = Decoder(config).to(config['device'])
