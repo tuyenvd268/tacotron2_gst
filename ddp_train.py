@@ -174,9 +174,9 @@ def train(config):
     model.train()
     scaler = torch.cuda.amp.GradScaler(enabled=True)
     for epoch in range(0, int(config["epoch"])):
-        train_tqdm = tqdm(train_loader, desc=f"epoch: {epoch}")
+        # train_tqdm = tqdm(train_loader, desc=f"epoch: {epoch}")
         train_mel_losses, train_gate_losses, train_emotion_losses = [], [], []
-        for batch in train_tqdm:
+        for batch in train_loader:
             model.zero_grad()
             
             x, y = parse_batch(batch)
@@ -197,7 +197,7 @@ def train(config):
             train_gate_losses.append(gate_loss.item())
             train_emotion_losses.append(emotion_loss.item())
             
-            train_tqdm.set_postfix({"mel_loss":mel_loss.item(), "emotion_loss":emotion_loss.item(),"gate_loss":gate_loss.item(), "step": step})
+            # train_tqdm.set_postfix({"mel_loss":mel_loss.item(), "emotion_loss":emotion_loss.item(),"gate_loss":gate_loss.item(), "step": step})
             step += 1
                     
             if is_main_process() and step % int(config["save_checkpoint_per_steps"]) == 0:
