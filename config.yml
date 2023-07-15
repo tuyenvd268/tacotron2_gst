@@ -6,10 +6,11 @@ save_checkpoint_per_steps: 1000
 logging_per_steps: 1000
 
 checkpoint_dir: 'outputs/checkpoints'
-checkpoint: 'outputs/checkpoints/checkpoint_148000.pt'
+checkpoint: 'outputs/checkpoints/checkpoint_158000.pt'
 device: 'cpu'
 log_dir: 'outputs/logs'
 
+reference_step: 100000
 emotion2id:
   neutral: 0
   happy: 1

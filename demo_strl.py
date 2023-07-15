@@ -37,6 +37,7 @@ if __name__ == "__main__":
         st.markdown(f"## Audio : ")
         st.audio(audio_bytes, format="audio/wav", start_time=0)
         
+        print(mel_spec)
         fig = plot_data((mel_spec, mel_outputs_postnet, alignments))
         
         st.pyplot(fig)

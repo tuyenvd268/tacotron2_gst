@@ -175,8 +175,11 @@ def train(config):
             with torch.cuda.amp.autocast(dtype=torch.float16):
                 y_pred = model(x)
                 mel_loss, gate_loss, emotion_loss = criterion(y_pred, y)
-            
-                loss = mel_loss+gate_loss+emotion_loss
+        
+                if step > config["reference_step"]:
+                    loss = mel_loss+gate_loss
+                else:
+                    loss = mel_loss+gate_loss+0.1*emotion_loss
             
             scaler.scale(loss).backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), config["grad_clip_thresh"])
