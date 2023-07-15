@@ -185,7 +185,7 @@ def train(config):
                 y_pred = model(x)
                 mel_loss, gate_loss, emotion_loss = criterion(y_pred, y)
         
-                loss = mel_loss+gate_loss+0.1*emotion_loss
+                loss = mel_loss+gate_loss+emotion_loss
             
             scaler.scale(loss).backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), config["grad_clip_thresh"])

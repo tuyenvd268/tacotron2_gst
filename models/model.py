@@ -3,10 +3,40 @@ from math import sqrt
 from utils import *
 from models.encoder import Encoder
 from models.decoder import Decoder
-from models.reference_encoder import Reference_Encoder
+from models.reference_encoder import GST
 from models.layers import *
 import torch
+import models.module as mm
+
 from torch import nn
+
+class TPSENet(nn.Module):
+    """
+    Predict speakers from style embedding (N-way classifier)
+
+    """
+    def __init__(self, text_dims, style_dims):
+        super(TPSENet, self).__init__()
+        self.conv = nn.Sequential(
+            mm.Conv1d(text_dims, style_dims, 3, activation_fn=torch.relu, bn=True, bias=False),
+        )
+        self.gru = nn.GRU(style_dims, style_dims, batch_first=True, bidirectional=True)
+        self.fc = nn.Linear(style_dims*2, style_dims)
+    
+    def forward(self, text_embedding):
+        """
+        :param text_embedding: (N, Tx, E)
+
+        Returns:
+            :y_: (N, 1, n_speakers) Tensor.
+        """
+        te = text_embedding.transpose(1, 2) # (N, E, Tx)
+        h = self.conv(te)
+        h = h.transpose(1, 2) # (N, Tx, C)
+        out, _ = self.gru(h)
+        se = self.fc(out[:, -1:, :])
+        se = torch.tanh(se)
+        return se
 
 class Tacotron2(nn.Module):
     def __init__(self, config):
@@ -24,8 +54,9 @@ class Tacotron2(nn.Module):
         self.encoder = Encoder(config).to(config['device'])
         self.decoder = Decoder(config).to(config['device'])
         self.postnet = Postnet(config).to(config['device'])
-        self.reference_encoder = Reference_Encoder(config)
-        self.ffw = nn.Linear(640, 512)
+        self.gst = GST(config)
+        self.tpnet = TPSENet(text_dims=512, style_dims=256)
+        self.ffw = nn.Linear(768, 512)
         self.dropout = nn.Dropout(0.1)
         
         self.emotion_embeddings = nn.Parameter(
@@ -38,9 +69,9 @@ class Tacotron2(nn.Module):
             mask = mask.expand(self.n_mel_channels, mask.size(0), mask.size(1))
             mask = mask.permute(1, 0, 2)
 
-            outputs[1].data.masked_fill_(mask, 0.0)
             outputs[2].data.masked_fill_(mask, 0.0)
-            outputs[3].data.masked_fill_(mask[:, 0, :], 1e3)  # gate energies
+            outputs[3].data.masked_fill_(mask, 0.0)
+            outputs[4].data.masked_fill_(mask[:, 0, :], 1e3)  # gate energies
 
         return outputs
 
@@ -50,14 +81,10 @@ class Tacotron2(nn.Module):
         embedded_inputs = self.embedding(text_inputs).transpose(1, 2)
         encoder_outputs = self.encoder(embedded_inputs, text_lengths)        
         
-        emotion_embeddings = self.reference_encoder(mels.transpose(1, 2))
-        attention_weight = torch.matmul(emotion_embeddings, self.emotion_embeddings.T)
-        emotion_predictions = attention_weight
-        embedded_emotions = torch.matmul(
-            torch.nn.functional.softmax(attention_weight, dim=1), self.emotion_embeddings).unsqueeze(1)
-        
-        embedded_emotions = embedded_emotions.detach().clone()
-        embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
+        emotion_embeddings = self.gst(mels.transpose(1, 2))    
+        predicted_emotion_embeddings = self.tpnet(encoder_outputs)    
+
+        embedded_emotions = emotion_embeddings.repeat(1, encoder_outputs.size(1), 1)
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         
@@ -68,7 +95,7 @@ class Tacotron2(nn.Module):
         mel_outputs_postnet = mel_outputs + mel_outputs_postnet
 
         return self.parse_output(
-            [emotion_predictions, mel_outputs, mel_outputs_postnet, gate_outputs, alignments],
+            [emotion_embeddings, predicted_emotion_embeddings, mel_outputs, mel_outputs_postnet, gate_outputs, alignments],
             output_lengths)
 
     def inference(self, inputs):
