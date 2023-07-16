@@ -25,11 +25,11 @@ class Tacotron2(nn.Module):
         self.decoder = Decoder(config).to(config['device'])
         self.postnet = Postnet(config).to(config['device'])
         self.reference_encoder = Reference_Encoder(config)
-        self.ffw = nn.Linear(640, 512)
+        self.ffw = nn.Linear(768, 512)
         self.dropout = nn.Dropout(0.1)
         
         self.emotion_embeddings = nn.Parameter(
-            torch.randn(4, 128)
+            torch.randn(4, 256)
         )
 
     def parse_output(self, outputs, output_lengths=None):

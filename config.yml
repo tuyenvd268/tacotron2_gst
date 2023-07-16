@@ -6,7 +6,7 @@ save_checkpoint_per_steps: 1000
 logging_per_steps: 1000
 
 checkpoint_dir: 'outputs/checkpoints'
-checkpoint: 'outputs/checkpoints/checkpoint_158000.pt'
+checkpoint: 'outputs/checkpoints/checkpoint_125000.pt'
 device: 'cpu'
 log_dir: 'outputs/logs'
 
@@ -86,5 +86,5 @@ use_saved_learning_rate: False
 learning_rate: 5e-4
 weight_decay: 0.0
 grad_clip_thresh: 1.0
-batch_size: 4
+batch_size: 2
 mask_padding: True 
