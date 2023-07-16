@@ -56,7 +56,6 @@ class Tacotron2(nn.Module):
         embedded_emotions = torch.matmul(
             torch.nn.functional.softmax(attention_weight, dim=1), self.emotion_embeddings).unsqueeze(1)
         
-        embedded_emotions = embedded_emotions.detach().clone()
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
         embedded_emotions = self.dropout(embedded_emotions)
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
