@@ -26,7 +26,7 @@ class Tacotron2(nn.Module):
         self.postnet = Postnet(config).to(config['device'])
         self.reference_encoder = Reference_Encoder(config)
         self.ffw = nn.Linear(768, 512)
-        self.dropout = nn.Dropout(0.1)
+        self.dropout = nn.Dropout(0.2)
         
         self.emotion_embeddings = nn.Parameter(
             torch.randn(4, 256)
@@ -58,6 +58,7 @@ class Tacotron2(nn.Module):
         
         embedded_emotions = embedded_emotions.detach().clone()
         embedded_emotions = embedded_emotions.repeat(1, encoder_outputs.size(1), 1)
+        embedded_emotions = self.dropout(embedded_emotions)
         encoder_outputs = torch.cat((encoder_outputs, embedded_emotions), dim=2)
         encoder_outputs = self.ffw(encoder_outputs)
         
